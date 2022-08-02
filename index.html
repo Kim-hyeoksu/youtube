@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <script defer src="./index.js"></script>
+  <!-- swiper JS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logoBox">
+      <i class="fa-solid fa-bars"></i>
+      <img src="images/YouTube-logo-2017-logotype.png" width='auto' height="20">
+    </div>
+    <div class="searchBox">
+      <div class="input-inner">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="between-bar"></div>
+      <input type="text" placeholder="검색" class="click">
+      <div class="searchIconBox">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="microIconBox">
+        <i class="fa-solid fa-microphone"></i>
+      </div>
+    </div>
+    <ul class="iconBox">
+      <li><i class="fas fa-search"></i></li>
+      <li><i class="fa-solid fa-microphone"></i></li>
+      <li><i class="fa-solid fa-video"></i></li>
+      <li><i class="fa-solid fa-bell"></i></li>
+      <li class="profileNameImage">
+        <div>혁수</div>
+      </li>
+    </ul>
+  </header>
+  <section class="tag">
+    <div class="inner-left"></div>
+    <div class="inner-right"></div>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide focus">전체</div>
+        <div class="swiper-slide">음악</div>
+        <div class="swiper-slide">실시간</div>
+        <div class="swiper-slide ">믹스</div>
+        <div class="swiper-slide">게임</div>
+        <div class="swiper-slide">실시간</div>
+        <div class="swiper-slide">축구</div>
+        <div class="swiper-slide">피트니스</div>
+        <div class="swiper-slide">수학</div>
+        <div class="swiper-slide">랩</div>
+        <div class="swiper-slide">만화 영화</div>
+        <div class="swiper-slide">요리</div>
+        <div class="swiper-slide">최근에 업로드된 동영상</div>
+        <div class="swiper-slide">감상한 동영상</div>
+        <div class="swiper-slide">새로운 맞춤 동영상</div>
+        <div class="swiper-slide">랩</div>
+        <div class="swiper-slide">만화 영화</div>
+        <div class="swiper-slide">요리</div>
+        <div class="swiper-slide">최근에 업로드된 동영상</div>
+        <div class="swiper-slide">감상한 동영상</div>
+        <div class="swiper-slide">새로운 맞춤 동영상</div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="swiper-button-next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="swiper-button-next">
+        <i class="fa-light fa-chevron-down"></i>
+      </div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!-- <ul class="tag-box">
+      <li class="focus">전체</li>
+      <li>음악</li>
+      <li>실시간</li>
+      <li>믹스</li>
+      <li>게임</li>
+      <li>피트니스</li>
+
+    </ul> -->
+  </section>
+  <section class="menu">
+    <div class="menu1">
+      <div class="menu-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="menu-title">홈</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <i class="fa-regular fa-compass"></i>
+        </div>
+        <div class="menu-title">탐색</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="menu-title">Shorts</div>
+      </div>
+      <div class="menu-item">
+        <div>
+          <img src="./images/icons/playlist.png" alt="">
+        </div>
+        <div class="menu-title">구독</div>
+      </div>  
+      <div class="menu-item">
+        <div class="icon-box">
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="menu-title">Originals</div>
+      </div>
+      <div class="menu-item">
+        <div>
+          <img src="./images/icons/play-button.png" alt="">
+        </div>
+        <div class="menu-title">Youtube Music</div>
+      </div>
+    </div>
+    <div class="menu2">
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/playlist (1).png" alt="">
+        </div>
+        <div class="menu-title">보관함</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-clock-rotate-left"></i>   
+        </div>
+        <div class="menu-title">시청 기록</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/play (1).png" alt="">
+        </div>
+        <div class="menu-title">내 동영상</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/film-roll.png" alt="">
+        </div>
+        <div class="menu-title">내 영화</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <i class="fa-regular fa-clock"></i>    
+        </div>
+        <div class="menu-title">나중에 볼 동영상</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/download.png" alt="다운로드">
+        </div>
+        <div class="menu-title">오프라인 저장 동영상</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-chevron-down"></i>  
+        </div>
+        <div class="menu-title">더보기</div>
+      </div>
+    </div>
+    <div class="menu-subscribe">
+      <div class="menu-item">
+        <div class="menu-name">구독</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/channels/혁수는못말려.jpg" alt="">  
+        </div>
+        <div class="menu-title">혁수는못말려</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/channels/혁수는못말려.jpg" alt="">  
+        </div>
+        <div class="menu-title">혁수는못말려</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/channels/혁수는못말려.jpg" alt="">  
+        </div>
+        <div class="menu-title">혁수는못말려</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/channels/혁수는못말려.jpg" alt="">  
+        </div>
+        <div class="menu-title">혁수는못말려</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/channels/혁수는못말려.jpg" alt="">  
+        </div>
+        <div class="menu-title">혁수는못말려</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/channels/혁수는못말려.jpg" alt="">  
+        </div>
+        <div class="menu-title">혁수는못말려</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/channels/혁수는못말려.jpg" alt="">  
+        </div>
+        <div class="menu-title">혁수는못말려</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-chevron-down"></i>  
+        </div>
+        <div class="menu-title">더보기</div>
+      </div>
+    </div>
+    <div class="menu-search">
+      <div class="menu-item">
+        <div class="menu-name">탐색</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/film-roll.png" alt="">
+        </div>
+        <div class="menu-title">영화</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/console.png" alt="">
+        </div>
+        <div class="menu-title">게임</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/free-icon-light-bulb-1799484.png" alt="">
+        </div>
+        <div class="menu-title">학습</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/trophy.png" alt="">
+        </div>
+        <div class="menu-title">스포츠</div>
+      </div>
+    </div>
+    <div class="menu-more">
+      <div class="menu-item">
+        <div class="menu-name">YOUTUBE 더보기</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/youtube (3).png" alt="">        
+        </div>
+        <div class="menu-title">크리에이터 스튜디오</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/youtube (1).png" alt="">
+        </div>
+        <div class="menu-title">YouTube Music</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/youtube (2).png" alt="">
+        </div>
+        <div class="menu-title">Youtube Kids</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/video.png" alt="">
+        </div>
+        <div class="menu-title">Youtube TV</div>
+      </div>
+    </div>
+    <div class="menu3">
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/settings.png" alt="">        
+        </div>
+        <div class="menu-title">설정</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/flag.png" alt="">
+        </div>
+        <div class="menu-title">신고 기록</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/question.png" alt="">
+        </div>
+        <div class="menu-title">고객센터</div>
+      </div>
+      <div class="menu-item">
+        <div class="icon-box">
+          <img src="./images/icons/premium-icon-chat-2889891.png" alt="">
+        </div>
+        <div class="menu-title">의견 보내기</div>
+      </div>
+    </div>
+    <div class="menu-info">
+      <div id="guide-links-primary">
+        <a href="javascript:void(0)">정보</a>
+        <a href="javascript:void(0)">보도자료</a>
+        <a href="javascript:void(0)">저작권</a>
+        <a href="javascript:void(0)">문의하기</a>
+        <a href="javascript:void(0)">크리에이터</a>
+        <a href="javascript:void(0)">광고</a>
+        <a href="javascript:void(0)">개발자</a>
+      </div>
+      <div id="guide-links-secondary">
+        <a href="javascript:void(0)">약관</a>
+        <a href="javascript:void(0)">개인정보처리방침</a>
+        <a href="javascript:void(0)">정책 및 안전</a>
+        <a href="javascript:void(0)">YouTube 작동의 원리</a>
+        <a href="javascript:void(0)">새로운 기능 테스트하기</a>
+      </div>
+      <div class="copyright">
+        <p>
+          ⓒ 2022 Google LLC<br>
+          CEO: 선다 피차이<br>
+          주소: 1600 Amphitheatre Parkway,<br>
+          Mountain View, CA 94043, USA.<br>
+          전화: 080-822-1450(무료)
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="video-list">
+    <div class="video-box">
+      <img src="./images/thumbnails/hqdefault (1).webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hqdefault (2).webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hqdefault.webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720.webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (1).webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (2).webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (3).webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (4).webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (5).webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (6).webp" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hqdefault.jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hqdefault (1).jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hqdefault (2).jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hqdefault (3).jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720.jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (1).jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (2).jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (3).jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    <div class="video-box">
+      <img src="./images/thumbnails/hq720 (7).jpg" alt="다음비디오">
+      <div class="hover-play">
+        계속 마우스 오버하여 재생하기
+      </div>
+      <div class="video-info">
+        <div class="profile-image">
+          <img src="https://yt3.ggpht.com/shlbs3d2QnYZucm55KLAc08stbwZ2EthwW3op5z__CkJPn5yoMGxL9eBaXJSQ_WT63sfu9DGOvU=s68-c-k-c0x00ffffff-no-rj" alt="">          
+        </div>
+        <div class="titleAndChannelName">
+          <p class="title">안녕</p>
+          <p class="channel-name">안녕</p>
+          <ul class="viewAndDate">
+            조회수&nbsp;
+            <li class="views">81</li>만회&nbsp; &nbsp;
+            <li class="date">5개월전</li>
+          </ul>
+        </div>
+        <div class="more">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</body>
+</html>
