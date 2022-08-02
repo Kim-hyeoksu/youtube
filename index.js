@@ -39,6 +39,44 @@ tagBoxEl.forEach((tagEl)=>{
   })
 })
 
+//video-list section
+const videoBoxs = document.querySelectorAll('.video-list .video-box')
+videoBoxs.forEach((videoBox)=>{
+  const nextVideo = videoBox.querySelector('.next-video')
+
+  nextVideo.addEventListener('mouseenter', (e)=>{
+    videoBox.style.zIndex = 1
+    const hoverPlay = e.target.querySelector('.hover-play')
+    hoverPlay.style.display = 'flex'
+    
+    const timer = setTimeout(()=> {
+      hoverPlay.style.display = 'none'
+      videoBox.style.scale = 1.15
+      gsap.to(videoBox, {
+        delay: 0,
+        duration: 0.2,
+        scale: 1.15
+      })
+    }, 1000);
+
+    nextVideo.addEventListener('mouseleave', (e)=>{
+      videoBox.style.zIndex = 0
+      gsap.set(videoBox, {
+        scale: 1
+      })
+      clearTimeout(timer)
+      const hoverPlay = e.target.querySelector('.hover-play')
+      hoverPlay.style.display = 'none'
+      
+    })
+  })
+  // videoBox.addEventListener('transitionend', (e)=>{
+  //   console.log('transitionend')
+  //   const hoverPlay = e.target.querySelector('.hover-play')
+  //   hoverPlay.style.display = 'none';
+  // })
+})
+
 //Swiper
 new Swiper('.tag .swiper', {
   autoplay: false, //자동 재생 여부
